@@ -7,6 +7,17 @@
     @play20.welcome(message)
     
 }{
-    @script("underscore.js")
-    @script("underscore.string.js")
+    @styleSheets(
+      List(
+        ("screen", "stylesheets/main.css")
+      )
+    )
+}{
+
+    @javaScripts(
+      List(
+        "javascripts/underscore.js",
+        "javascripts/underscore.string.js"
+      )
+    )
 }
